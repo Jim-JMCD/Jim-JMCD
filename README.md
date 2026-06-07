@@ -54,7 +54,3 @@ Scaleway are a French transactional email providers the provide a free service f
 * IT Infrastruture, including servers, that can send alerts, reports using local email clients and utlities like postfix.     
 ________________________________________________________________________________________________________________________
 
-
-
-are used by those that want to sent out bulk emails that you don't 
-
