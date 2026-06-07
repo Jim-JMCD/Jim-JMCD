@@ -36,7 +36,7 @@ Calculations are theoretical and used to illustrate the dynamics of the impact d
 Download [Data dedupe calculator (MS-Excel)](https://github.com/Jim-JMCD/Data_storage_network_deduplication_calculator/blob/main/Dedupecal_202308L.xlsx) macro free. The repro has examples of usage.
 ________________________________________________________________________________________________________________________
 # Guides for Linux Server and Desktop Mail Tools
-System, security and application administrators use command line mail tools like sendmail, postfix, mailx and mutt to mail out reports, alerts and other material to people that presumably care. These guides describe how setup up command line mail services using Proton Mail Bridge and mail-only SMTP services. 
+System, security and application administrators use command line mail tools like sendmail, postfix, mailx and mutt to mail out reports, alerts and other material to external people. These guides describe how setup up command line mail services using Proton Mail Bridge and mail-only SMTP services.  SMTP services can used with Linux system utilities that are mail enabled, like cron.
 ________________________________________________________________________________________________________________________
 #### [Mutt with Proton Mail Bridge](https://github.com/Jim-JMCD/mutt_protonmail-bridge)
 Guide for installing, configuring and using the Mutt mail client with Proton Mail Bridge.  Mutt is an option for those that do not have a domian to use.
@@ -44,7 +44,9 @@ Guide for installing, configuring and using the Mutt mail client with Proton Mai
 [Mutt_Proton_Mail-Bridge_Guide (PDF)](https://github.com/Jim-JMCD/mutt_protonmail-bridge/blob/main/Mutt_Proton_Mail-Bridge_Guide.pdf) The repo contins the muttrc and scripts
 _________________________________________________________________________________________________________________________
 #### Postfix with Proton Mail SMTP
-Repo under construction, testing complete.
+Guide for installing, configuring and using Postfix with Proton Mail TLS/SASL secure SMTP. Requires a personal/company domain to be configured within th4e Prootn Mail account that is going to act as a send-only mail relay. 
+
+[Postfix SMTP Proton Mail - Installation, Configuration and Usage Guide](https://github.com/Jim-JMCD/postfix-SMTP_Proton-Mail/blob/main/Postfix_SMTP_Proton-Mail_Guide.pdf)  
 ________________________________________________________________________________________________________________________
 #### Postfix with Scaleway SMTP Transactional Email Services
 Undergoing development and testing
