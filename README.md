@@ -19,22 +19,42 @@ ________________________________________________________________________________
  * Run either interactively or unaccompanied in batch mode.
 
  ___[TestFilesCreate Datasheet](https://github.com/Jim-JMCD/testFilesCreate/blob/main/Datasheet%20testFilesCreate.pdf)___ Usage plus results testing data compression and data deduplication 
+__________________________________________________________________________________________________________________________
+#### [tetsFilesMake](https://github.com/Jim-JMCD/testFilesMake)  
+
+Similar to __testFilesCreate__. Differences being: only produces a single directory of test files, has an option for sparse files and no calculator.
+
+Makes test data for testing data storage, compression and transfer. The app can create test data files filled random selectable printable characters or binary data. Selecting printable content controls how compressible the test data is. There is a sparse file option. Files are created in a single directory. No data creation limits. 
 _________________________________________________________________________________________________________________________
 #### [genFRN](https://github.com/Jim-JMCD/genFRN) - _Generic File Re-namer_
   
 A script ( Bash & Powershell) that renames files, in a directory, that have generic meaningless names produced by phones, cameras log file genrators. This script will add the names of the parent directories as a prefix to current names. The script creates an executable log that will undo the renaming processing. The number of parent directory names you want to include in the prefix of the new name is selectable. 
 _________________________________________________________________________________________________________________________
-#### [mutt_protonmail-bridge](https://github.com/Jim-JMCD/mutt_protonmail-bridge) _for Linux Server & Desktop_
-##### Guide for installing, configuring and using the Mutt mail client with Proton Mail Bridge on Linux Server and Linux Desktop.
-
-System, security and application administrators use command line mail tools like sendmail, postfix, mailx and mutt to mail out reports alerts and other material to people that presumably care. This guide describes how setup up command line mail services using Proton Mail Bridge combined with the Mutt mail client. Mutt is an option for those that do not have a personal domian.
-
-[Mutt_Proton_Mail-Bridge_Guide (PDF)](https://github.com/Jim-JMCD/mutt_protonmail-bridge/blob/main/Mutt_Proton_Mail-Bridge_Guide.pdf) The repo contins the muttrc and scripts
-_________________________________________________________________________________________________________________________
 #### [Data Dedupe calculator](https://github.com/Jim-JMCD/Data_storage_network_deduplication_calculator) _for Storage & Network capacity planning and requirements_
 Calculations are theoretical and used to illustrate the dynamics of the impact deduplication.  Calcultor out will not likely to match vendor calculations because there are many factors that influence deduplication capacity planning.
 
 Download [Data dedupe calculator (MS-Excel)](https://github.com/Jim-JMCD/Data_storage_network_deduplication_calculator/blob/main/Dedupecal_202308L.xlsx) macro free. The repro has examples of usage.
-_________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________
+# Guides for Linux Server and Desktop Mail Tools
+System, security and application administrators use command line mail tools like sendmail, postfix, mailx and mutt to mail out reports, alerts and other material to people that presumably care. These guides describe how setup up command line mail services using Proton Mail Bridge and mail-only SMTP services. 
+________________________________________________________________________________________________________________________
+#### [Mutt with Proton Mail Bridge](https://github.com/Jim-JMCD/mutt_protonmail-bridge)
+Guide for installing, configuring and using the Mutt mail client with Proton Mail Bridge.  Mutt is an option for those that do not have a domian to use.
 
+[Mutt_Proton_Mail-Bridge_Guide (PDF)](https://github.com/Jim-JMCD/mutt_protonmail-bridge/blob/main/Mutt_Proton_Mail-Bridge_Guide.pdf) The repo contins the muttrc and scripts
+_________________________________________________________________________________________________________________________
+#### Postfix with Proton Mail SMTP
+Repo under construction, testing complete.
+________________________________________________________________________________________________________________________
+#### Postfix with Scaleway SMTP Transactional Email Services
+Undergoing development and testing
+
+Scaleway are a French transactional email providers the provide a free service for low volume usage. Transactional email servcies are for delivering automated emails triggered by:
+* Application that can send alerts, account verifications, invoices, notifications, and similar messages.
+* IT Infrastruture, including servers, that can send alerts, reports using local email clients and utlities like postfix.     
+________________________________________________________________________________________________________________________
+
+
+
+are used by those that want to sent out bulk emails that you don't 
 
