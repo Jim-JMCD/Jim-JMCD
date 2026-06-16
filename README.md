@@ -38,21 +38,15 @@ ________________________________________________________________________________
 # Guides for Linux Server and Desktop Mail Tools
 System, security and application administrators use command line mail tools like sendmail, postfix, mailx and mutt to mail out reports, alerts and other material to external people. These guides describe how setup up command line mail services using Proton Mail Bridge and mail-only SMTP services.  SMTP services can used with Linux system utilities that are mail enabled, like cron.
 ________________________________________________________________________________________________________________________
-#### [Mutt with Proton Mail Bridge](https://github.com/Jim-JMCD/mutt_protonmail-bridge)
+## [Mutt with Proton Mail Bridge](https://github.com/Jim-JMCD/mutt_protonmail-bridge)
 Guide for installing, configuring and using the Mutt mail client with Proton Mail Bridge.  Mutt is an option for those that do not have a domian to use.
 
 [Mutt_Proton_Mail-Bridge_Guide (PDF)](https://github.com/Jim-JMCD/mutt_protonmail-bridge/blob/main/Mutt_Proton_Mail-Bridge_Guide.pdf) The repo contins the muttrc and scripts
 _________________________________________________________________________________________________________________________
-#### Postfix with Proton Mail SMTP
-Guide for installing, configuring and using Postfix with Proton Mail TLS/SASL secure SMTP. Requires a personal/company domain to be configured within th4e Prootn Mail account that is going to act as a send-only mail relay. 
+## Postfix with Proton Mail SMTP and Scaleway TEM STMP 
+Guide for installing, configuring and using Postfix with Proton Mail TLS/SASL secure SMTP. Requires a personal/company domain to be configured to use these serives. 
+Proton and Scaleway have some common configuration but very differnt in some areas. The guide includes detial on sending cron and rsyslog emails.
 
-[Postfix SMTP Proton Mail - Installation, Configuration and Usage Guide](https://github.com/Jim-JMCD/postfix-SMTP_Proton-Mail/blob/main/Postfix_SMTP_Proton-Mail_Guide.pdf)  
-________________________________________________________________________________________________________________________
-#### Postfix with Scaleway SMTP Transactional Email Services
-Undergoing development and testing
-
-Scaleway are a French transactional email providers the provide a free service for low volume usage. Transactional email servcies are for delivering automated emails triggered by:
-* Application that can send alerts, account verifications, invoices, notifications, and similar messages.
-* IT Infrastruture, including servers, that can send alerts, reports using local email clients and utlities like postfix.     
+[Postfix SMTP Proton Mail and Scaleway TEM - Installation, Configuration and Usage Guide](https://github.com/Jim-JMCD/postfix-SMTP_Proton-Mail/blob/main/Postfix_SMTP_Proton-Mail_Guide.pdf)  
 ________________________________________________________________________________________________________________________
 
