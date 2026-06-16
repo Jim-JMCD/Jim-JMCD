@@ -41,12 +41,25 @@ ________________________________________________________________________________
 ## [Mutt with Proton Mail Bridge](https://github.com/Jim-JMCD/mutt_protonmail-bridge)
 Guide for installing, configuring and using the Mutt mail client with Proton Mail Bridge.  Mutt is an option for those that do not have a domian to use.
 
-[Mutt_Proton_Mail-Bridge_Guide (PDF)](https://github.com/Jim-JMCD/mutt_protonmail-bridge/blob/main/Mutt_Proton_Mail-Bridge_Guide.pdf) The repo contins the muttrc and scripts
+[Mutt_Proton_Mail-Bridge_Guide (PDF)](https://github.com/Jim-JMCD/mutt_protonmail-bridge/blob/main/Mutt_Proton_Mail-Bridge_Guide.pdf) The repo contains the muttrc and scripts
 _________________________________________________________________________________________________________________________
-## Postfix with Proton Mail SMTP and Scaleway TEM STMP 
-Guide for installing, configuring and using Postfix with Proton Mail TLS/SASL secure SMTP. Requires a personal/company domain to be configured to use these serives. 
-Proton and Scaleway have some common configuration but very differnt in some areas. The guide includes detial on sending cron and rsyslog emails.
+## [A Guide for integrating Postfix with Proton Mail & Scaleway TEM SMTP servcies.](https://github.com/Jim-JMCD/Postfix-SMTP_Guide_for_PROTONmail_and_SCALEWAY-TEM/blob/main/POSTFIX-SMTP_Guide_for_PROTONmail_and_SCALEWAY-TEM.pdf)
+#### Proton STMP is an integrated mail relay add-on to a regular mail account, best for low volume mailing.
+#### Scaleway transactional SMTP mail service is designed for low and high volume mailing.         
 
-[Postfix SMTP Proton Mail and Scaleway TEM - Installation, Configuration and Usage Guide](https://github.com/Jim-JMCD/postfix-SMTP_Proton-Mail/blob/main/Postfix_SMTP_Proton-Mail_Guide.pdf)  
+This guide describes how integrate Linux postfix to work with Proton Mail and Scaleway Transactional Email (TEM) secure SMTP services. Postfix when configured to work with a SMTP relay provides system and application administrators to use native and application mail tools to send reports, alerts and other information to external email addresses. The SMTP services of Proton and Scaleway are different in configuration requirements because they are designed for different workloads.    
+
+The guide is for separate installations, it does not cover configuring postfix to use Proton and Scaleway SMTP in the same computer.   
+ 
+##### Guide coverage
+* Postfix Installation and configuration with SASL/TLS security.
+* Setting default email addresses with __*sender_canonical*__. 
+* Enabling preconfigured sender email addresses for Proton SMTP with __*sender_relay*__.
+* Configuring cron and rsyslog ommail to send external mail.
+* Testing and some troubleshooting.
+
+This guide could be used for other Postfix SMTP mail installations. 
+
+[A Guide for integrating Postfix with Proton Mail & Scaleway TEM SMTP servcies](https://github.com/Jim-JMCD/Postfix-SMTP_Guide_for_PROTONmail_and_SCALEWAY-TEM) The repo contians configuration files   
 ________________________________________________________________________________________________________________________
 
