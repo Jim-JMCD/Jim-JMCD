@@ -31,7 +31,10 @@ ________________________________________________________________________________
 A script ( Bash & Powershell) that renames files, in a directory, that have generic meaningless names produced by phones, cameras log file genrators. This script will add the names of the parent directories as a prefix to current names. The script creates an executable log that will undo the renaming processing. The number of parent directory names you want to include in the prefix of the new name is selectable. 
 _________________________________________________________________________________________________________________________
 #### [Data Dedupe calculator](https://github.com/Jim-JMCD/Data_storage_network_deduplication_calculator) _for Storage & Network capacity planning and requirements_
-Calculations are theoretical and used to illustrate the dynamics of the impact deduplication.  Calcultor out will not likely to match vendor calculations because there are many factors that influence deduplication capacity planning.
+Calculations are theoretical and used to illustrate the dynamics of the impact deduplication.  The calculator will not likely to match vendor calculations because there are many factors that influence deduplication capacity planning. 
+* Data that is encrypted and already compressed may render data deduplication ineffectove.
+* Many data deduplication appliances and software will compress the stored data chunks.
+* Files that are too small may be ignored by the deduplication process.   
 
 Download [Data dedupe calculator (MS-Excel)](https://github.com/Jim-JMCD/Data_storage_network_deduplication_calculator/blob/main/Dedupecal_202308L.xlsx) macro free. The repro has examples of usage.
 ________________________________________________________________________________________________________________________
