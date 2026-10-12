@@ -9,11 +9,11 @@ Duplicate file finder, a Linux bash script that produces reports on duplicate & 
 _________________________________________________________________________________________________________________________
 #### [testFilesCreate](https://github.com/Jim-JMCD/testFilesCreate) 
 ##### Create bulk data for testing and benchmarking data storage, backups, data compression and deduplication  
- A small Linux app that creates test files filling them with random data in a single directory or a directory tree. 
+ A Linux Bash script that creates test files filling them with random data in a single directory or a directory tree. 
  * Includes a calculator for creating data in directory trees.
  * Can create a single file to a directory tree, tree size provided by user.  
  * File contents can either be printable or binary. All contents generated from /dev/urandom.
- * Selecting the printable pool of characters determines the **compressibility** of file contents.  
+ * Selecting the range of the printable pool of characters determines the **compressibility** of file contents.  The more characters in the pool, them more random the contents of individual files are.  
  * Files sizes can be identical or randomly sized within a given range.
  * Files can be identical or individually filled with random content.
  * Run either interactively or unaccompanied in batch mode.
